@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Dogs
+        a(href="/update-cobj") Add to this table
+        table
+            thead
+                tr
+                    th Name
+                    th Age
+                    th Breed
+                    th Color
+            tbody
+                each dog in data
+                    tr
+                        td #{dog.properties.name}
+                        td #{dog.properties.age}
+                        td #{dog.properties.breed}
+                        td #{dog.properties.color}

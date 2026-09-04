@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Update Custom Object Form
+        a(href="/") Return to the homepage
+        form(method="POST" action="/update-cobj")
+            label(for="name") Name
+            input(type="text" name="name" id="name" required)
+            label(for="age") Age
+            input(type="text" name="age" id="age")
+            label(for="breed") Breed
+            input(type="text" name="breed" id="breed")
+            label(for="color") Color
+            input(type="text" name="color" id="color")
+            button(type="submit") Submit
